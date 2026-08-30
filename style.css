@@ -90,16 +90,7 @@ a:hover { color: var(--navy); }
   padding-block: 0.75rem;
   padding-inline: clamp(1.25rem, 4vw, 2.5rem); max-width: 1220px; margin-inline: auto;
 }
-.util-nav { margin-left: auto; }
-.util-nav ul { display: flex; gap: 1.2rem; list-style: none; margin: 0; padding: 0; }
-.util-nav a {
-  color: var(--ink); text-decoration: none; font-size: 0.92rem;
-  padding: 0.35rem 0; border-bottom: 2px solid transparent; display: block;
-}
-.util-nav a:hover, .util-nav a[aria-current="page"] {
-  color: var(--navy); border-bottom-color: var(--green);
-}
-.btn.btn-refer { padding: 0.55rem 1.1rem; font-size: 0.92rem; }
+
 .brand { display: flex; align-items: center; gap: 0.7rem; text-decoration: none; }
 .brand img { height: 58px; width: auto; display: block; }
 .brand-text { display: flex; flex-direction: column; line-height: 1; }
@@ -114,27 +105,27 @@ a:hover { color: var(--navy); }
 .site-nav { border-top: 1px solid var(--wash-2); }
 .site-nav .nav-row {
   max-width: 1220px; margin-inline: auto;
-  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+  padding-inline: 1.25rem;
 }
 .site-nav ul {
-  display: flex; flex-wrap: wrap; gap: 0 1.6rem;
+  display: flex; flex-wrap: nowrap; justify-content: space-between; gap: 0 1rem;
   list-style: none; margin: 0; padding: 0;
 }
+.site-nav li { white-space: nowrap; }
 .site-nav a {
-  color: var(--ink); text-decoration: none; font-size: 0.95rem; font-weight: 600;
+  color: var(--ink); text-decoration: none; font-size: 0.88rem; font-weight: 600;
   padding: 0.6rem 0; border-bottom: 2px solid transparent; display: block;
 }
 .site-nav a:hover, .site-nav a[aria-current="page"] {
   color: var(--navy); border-bottom-color: var(--green);
 }
-@media screen and (min-width: 801px) { .site-nav li.u { display: none; } }
+
 
 .nav-toggle { display: none; }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1259px) {
   /* without JS the stacked header is too tall to pin; with it, the nav collapses */
   html:not(.js) .site-header { position: static; }
   .brand-text span { display: none; }
-  .util-nav, .btn.btn-refer { display: none; }
   .site-nav { border-top: 0; }
 
   .nav-toggle {
