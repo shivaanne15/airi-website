@@ -29,6 +29,14 @@ html { scroll-behavior: smooth; }
   * { animation: none !important; transition: none !important; }
 }
 
+body::before {
+  content: ""; position: fixed; z-index: -1;
+  top: 50%; right: -6vw; transform: translateY(-50%);
+  width: min(600px, 60vw); height: 92vh;
+  background: url("assets/logo-mark.png") right center / contain no-repeat;
+  opacity: 0.09;
+}
+@media print { body::before { display: none; } }
 body {
   margin: 0;
   font-family: "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -190,7 +198,7 @@ a:hover { color: var(--navy); }
 /* ---------- sections ---------- */
 
 section { padding-block: clamp(3rem, 7vw, 5rem); }
-section.tint { background: var(--wash); border-block: 1px solid var(--line); }
+section.tint { background: rgba(242, 247, 249, 0.8); border-block: 1px solid var(--line); }
 section > .wrap > :first-child { margin-top: 0; }
 
 .grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
@@ -364,16 +372,9 @@ tr:last-child td { border-bottom: 0; }
 th { background: var(--wash); color: var(--navy); font-size: 0.8rem; letter-spacing: 0.06em; text-transform: uppercase; }
 
 .page-head {
-  background: var(--wash); border-bottom: 1px solid var(--line);
+  background: rgba(242, 247, 249, 0.8); border-bottom: 1px solid var(--line);
   padding-block: clamp(2.25rem, 5vw, 3.5rem);
-  position: relative; overflow: hidden;
 }
-.page-head::after {
-  content: ""; position: absolute; inset: -6% -30px -6% auto; width: min(400px, 45vw);
-  background: url("assets/logo-mark.png") right center / contain no-repeat;
-  opacity: 0.14; pointer-events: none;
-}
-.page-head .wrap { position: relative; z-index: 1; }
 .page-head p { font-size: 1.1rem; color: var(--muted); margin-bottom: 0; }
 
 .figure { border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
