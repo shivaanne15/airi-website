@@ -31,8 +31,11 @@ ordinary web hosting. Point `airispecialityinfusion.com` at it. Nothing else is 
 To preview locally:
 
 ```bash
-python3 -m http.server 8765
+python3 serve.py
 ```
+
+(`serve.py` is a stock Python file server that also tells the browser not to cache,
+so edits show up immediately.)
 
 Then open <http://localhost:8765>.
 
