@@ -20,7 +20,8 @@ if (nav) {
     const open = nav.classList.toggle('open');
     toggle.setAttribute('aria-expanded', String(open));
   });
-  nav.before(toggle);
+  const bar = document.querySelector('.header-top');
+  (bar || nav.parentNode).append(toggle);
   // choosing a page closes the menu
   nav.addEventListener('click', e => {
     if (e.target.closest('a')) { nav.classList.remove('open'); toggle.setAttribute('aria-expanded', 'false'); }
