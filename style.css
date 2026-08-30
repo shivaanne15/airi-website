@@ -34,7 +34,7 @@ body::before {
   top: 50%; left: 50%; transform: translate(-50%, -50%);
   width: min(600px, 60vw); height: 92vh;
   background: url("assets/logo-mark.png") center / contain no-repeat;
-  opacity: 0.19;
+  opacity: 0.29;
 }
 @media print { body::before { display: none; } }
 body {
