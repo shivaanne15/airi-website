@@ -14,7 +14,8 @@ one small script. No build step, no framework, no server-side code.
 | `sbs.html` | Short bowel syndrome patient guide |
 | `rehab.html` | GI anatomy and intestinal rehabilitation guide |
 | `transplant.html` | Intestinal transplant referral criteria (clinical reference) |
-| `refer.html` | Referral criteria, required records, **referral form** |
+| `refer.html` | Referral criteria, required records, **inpatient referral form** |
+| `outpatient.html` | **Outpatient referral form** |
 | `patients.html` | Patient and caregiver education library |
 | `contact.html` | Contact details and **consultation request form** |
 | `privacy.html` | Privacy and accessibility statement |

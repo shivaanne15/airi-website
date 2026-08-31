@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Outpatient Referral Form — AIRI</title>
+<meta name="description" content="Outpatient referral form for the AIRI multidisciplinary intestinal rehabilitation program: provider and patient information, reason for referral, clinical history, and services requested.">
+<link rel="icon" href="assets/logo-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="emergency-bar"><div class="wrap">
+  <p>AIRI is not an emergency service. For a medical emergency, call 911 or go to the nearest emergency department.</p>
+</div></div>
+
+<header class="site-header">
+  <div class="header-top">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-mark.png" alt="">
+      <span class="brand-text"><b>AIRI</b><span>Advanced Intestinal Rehabilitation Institute</span></span>
+    </a>
+  </div>
+  <nav class="site-nav" aria-label="Main"><div class="nav-row"><ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="conditions.html">Conditions</a></li>
+      <li><a href="program.html">Intestinal Failure Program</a></li>
+      <li><a href="sbs.html">Short Bowel Syndrome</a></li>
+      <li><a href="rehab.html">Intestinal Rehab</a></li>
+      <li><a href="transplant.html">Intestinal Transplant</a></li>
+      <li><a href="refer.html">Refer a Patient</a></li>
+      <li><a href="patients.html">Patients &amp; Caregivers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul></div></nav>
+</header>
+
+<main id="main">
+
+<div class="page-head"><div class="wrap narrow">
+  <p class="eyebrow">For referring clinicians</p>
+  <h1>Outpatient Referral Form</h1>
+  <p>Refer a clinic patient to the AIRI multidisciplinary intestinal rehabilitation program. Complete all applicable sections; incomplete forms may delay intake scheduling.</p>
+</div></div>
+
+<section class="tint">
+  <div class="wrap">
+    <p>When you choose <strong>Email this referral</strong>, your own email program opens with the completed form in the message body &mdash; review it and send. Attach relevant records (operative reports, imaging, labs, nutrition and infusion orders) if your system allows, or send them by secure fax to <strong>(209) 290-3664</strong>. Referring a hospitalized patient instead? Use the <a href="refer.html#form">inpatient referral form</a>.</p>
+
+    <div class="alert">
+      <p><strong>Before you send.</strong> Ordinary email is not a secure channel for protected health information. Send this form from a secure or encrypted email account, or use secure fax at (209) 290-3664. For an emergent situation, call (209) 313-4433 today &mdash; and for a medical emergency, call 911.</p>
+    </div>
+
+    <form class="form" action="mailto:referrals@airispecialtyinfusion.com" method="post" enctype="text/plain" data-mailto="referrals@airispecialtyinfusion.com" data-subject="AIRI outpatient referral">
+
+      <fieldset>
+        <legend>Referring provider</legend>
+        <input type="hidden" name="--1" value="Referring provider">
+        <div class="fields">
+          <div class="field"><label for="o1">Provider name and credentials <span class="req" aria-hidden="true">*</span></label>
+            <input id="o1" name="Referring provider" type="text" required></div>
+          <div class="field"><label for="o2">Practice or facility</label>
+            <input id="o2" name="Practice / facility" type="text"></div>
+          <div class="field"><label for="o3">NPI number</label>
+            <input id="o3" name="NPI #" type="text"></div>
+          <div class="field"><label for="o4">Specialty</label>
+            <input id="o4" name="Specialty" type="text"></div>
+          <div class="field"><label for="o5">Phone <span class="req" aria-hidden="true">*</span></label>
+            <input id="o5" name="Provider phone" type="tel" required></div>
+          <div class="field"><label for="o6">Fax</label>
+            <input id="o6" name="Provider fax" type="text"></div>
+          <div class="field"><label for="o7">Email</label>
+            <input id="o7" name="Provider email" type="email"></div>
+          <div class="field"><label for="o8">Date of referral</label>
+            <input id="o8" name="Date of referral" type="date"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Patient demographics</legend>
+        <input type="hidden" name="--2" value="Patient demographics">
+        <div class="fields">
+          <div class="field"><label for="o10">Patient name <span class="req" aria-hidden="true">*</span></label>
+            <input id="o10" name="Patient name" type="text" required></div>
+          <div class="field"><label for="o11">Date of birth</label>
+            <input id="o11" name="DOB" type="date"></div>
+          <div class="field"><label for="o12">MRN, if known</label>
+            <input id="o12" name="MRN" type="text"></div>
+          <div class="field"><label for="o13">Sex</label>
+            <select id="o13" name="Sex"><option value="">Choose one</option><option>Female</option><option>Male</option><option>Other</option><option>Prefer not to say</option></select></div>
+          <div class="field full"><label for="o14">Address</label>
+            <input id="o14" name="Patient address" type="text"></div>
+          <div class="field"><label for="o15">Phone</label>
+            <input id="o15" name="Patient phone" type="tel"></div>
+          <div class="field"><label for="o16">Preferred language</label>
+            <input id="o16" name="Preferred language" type="text"></div>
+          <div class="field"><label for="o17">Emergency contact / caregiver</label>
+            <input id="o17" name="Emergency contact" type="text"></div>
+          <div class="field"><label for="o18">Relationship</label>
+            <input id="o18" name="Relationship" type="text"></div>
+          <div class="field"><label for="o19">Primary insurance</label>
+            <input id="o19" name="Primary insurance" type="text"></div>
+          <div class="field"><label for="o20">Primary policy / ID number</label>
+            <input id="o20" name="Primary policy #" type="text"></div>
+          <div class="field"><label for="o21">Secondary insurance</label>
+            <input id="o21" name="Secondary insurance" type="text"></div>
+          <div class="field"><label for="o22">Secondary policy / ID number</label>
+            <input id="o22" name="Secondary policy #" type="text"></div>
+          <div class="field"><label for="o23">Prior authorization obtained?</label>
+            <select id="o23" name="Prior authorization"><option value="">Choose one</option><option>Yes</option><option>No</option><option>Pending</option></select></div>
+          <div class="field"><label for="o24">Primary care physician</label>
+            <input id="o24" name="PCP" type="text"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Reason for referral</legend>
+        <input type="hidden" name="--3" value="Reason for referral">
+        <div class="opts">
+          <label><input type="checkbox" name="Reason" value="Short bowel syndrome (SBS)"> Short bowel syndrome (SBS)</label>
+          <label><input type="checkbox" name="Reason" value="Intestinal failure - new diagnosis"> Intestinal failure &mdash; new diagnosis</label>
+          <label><input type="checkbox" name="Reason" value="Failure to wean parenteral nutrition"> Failure to wean parenteral nutrition</label>
+          <label><input type="checkbox" name="Reason" value="PN-associated liver disease (IFALD)"> PN-associated liver disease (IFALD)</label>
+          <label><input type="checkbox" name="Reason" value="Recurrent central line infections (CLABSI)"> Recurrent central line infections</label>
+          <label><input type="checkbox" name="Reason" value="Malabsorption / severe malnutrition"> Malabsorption or severe malnutrition</label>
+          <label><input type="checkbox" name="Reason" value="Chronic intestinal pseudo-obstruction"> Chronic intestinal pseudo-obstruction</label>
+          <label><input type="checkbox" name="Reason" value="Radiation enteritis"> Radiation enteritis</label>
+          <label><input type="checkbox" name="Reason" value="Enterocutaneous / high-output fistula"> Enterocutaneous or high-output fistula</label>
+          <label><input type="checkbox" name="Reason" value="Motility disorder evaluation"> Motility disorder evaluation</label>
+          <label><input type="checkbox" name="Reason" value="Transplant evaluation (intestinal / multivisceral)"> Transplant evaluation</label>
+        </div>
+        <div class="fields">
+          <div class="field full"><label for="o30">Other reason</label>
+            <input id="o30" name="Other reason" type="text"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Clinical history</legend>
+        <input type="hidden" name="--4" value="Clinical history">
+        <div class="fields">
+          <div class="field full"><label for="o31">Underlying diagnosis / etiology of intestinal failure <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="o31" name="Underlying diagnosis / etiology" required></textarea></div>
+          <div class="field full"><label for="o32">Remaining bowel anatomy (length, segments, ostomy or anastomosis)</label>
+            <textarea id="o32" name="Remaining bowel anatomy"></textarea></div>
+          <div class="field full"><label for="o33">Relevant surgical history (dates, procedures)</label>
+            <textarea id="o33" name="Surgical history"></textarea></div>
+          <div class="field full"><label for="o34">Current PN / IV fluid regimen (formula, volume, cycle, frequency)</label>
+            <textarea id="o34" name="Current PN / IV regimen"></textarea></div>
+          <div class="field"><label for="o35">Enteral / oral intake status</label>
+            <select id="o35" name="Enteral / oral intake"><option value="">Choose one</option><option>NPO</option><option>Oral diet</option><option>Tube feeds</option><option>Combination</option></select></div>
+          <div class="field"><label for="o36">Vascular access type</label>
+            <select id="o36" name="Vascular access"><option value="">Choose one</option><option>PICC</option><option>Tunneled CVC</option><option>Port</option><option>None</option><option>Other</option></select></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Medications, allergies, and records</legend>
+        <input type="hidden" name="--5" value="Medications, allergies, and records">
+        <div class="fields">
+          <div class="field full"><label for="o40">Current medications (including antimotility, antisecretory, GLP-2 analog, antibiotics)</label>
+            <textarea id="o40" name="Current medications"></textarea></div>
+          <div class="field full"><label for="o41">Known allergies</label>
+            <input id="o41" name="Known allergies" type="text"></div>
+        </div>
+        <p class="opts-label">Most recent labs attached or being sent</p>
+        <div class="opts">
+          <label><input type="checkbox" name="Labs" value="CBC"> CBC</label>
+          <label><input type="checkbox" name="Labs" value="CMP"> CMP</label>
+          <label><input type="checkbox" name="Labs" value="LFTs"> LFTs</label>
+          <label><input type="checkbox" name="Labs" value="Micronutrients / trace elements"> Micronutrients / trace elements</label>
+          <label><input type="checkbox" name="Labs" value="Triglycerides"> Triglycerides</label>
+        </div>
+        <p class="opts-label">Imaging attached or being sent</p>
+        <div class="opts">
+          <label><input type="checkbox" name="Imaging" value="CT / MRI abdomen"> CT or MRI abdomen</label>
+          <label><input type="checkbox" name="Imaging" value="Small bowel series"> Small bowel series</label>
+          <label><input type="checkbox" name="Imaging" value="Other"> Other</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Services requested</legend>
+        <input type="hidden" name="--6" value="Services requested">
+        <div class="opts">
+          <label><input type="checkbox" name="Services" value="Intestinal rehabilitation consultation"> Intestinal rehabilitation consultation</label>
+          <label><input type="checkbox" name="Services" value="Nutrition support / dietitian evaluation"> Nutrition support / dietitian evaluation</label>
+          <label><input type="checkbox" name="Services" value="Home PN/IV management optimization"> Home PN/IV management optimization</label>
+          <label><input type="checkbox" name="Services" value="GI motility / surgical evaluation"> GI motility / surgical evaluation</label>
+          <label><input type="checkbox" name="Services" value="Vascular access assessment"> Vascular access assessment</label>
+          <label><input type="checkbox" name="Services" value="Transplant center referral"> Transplant center referral</label>
+          <label><input type="checkbox" name="Services" value="Psychosocial / care coordination support"> Psychosocial / care coordination support</label>
+          <label><input type="checkbox" name="Services" value="Telehealth follow-up enrollment"> Telehealth follow-up enrollment</label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Urgency and scheduling</legend>
+        <input type="hidden" name="--7" value="Urgency and scheduling">
+        <div class="fields">
+          <div class="field"><label for="o50">Urgency <span class="req" aria-hidden="true">*</span></label>
+            <select id="o50" name="Urgency" required>
+              <option value="">Choose one</option>
+              <option>Routine — within 2–4 weeks</option>
+              <option>Urgent — within 1 week</option>
+              <option>Emergent — contact today (also call (209) 313-4433)</option>
+            </select></div>
+          <div class="field"><label for="o51">Preferred visit type</label>
+            <select id="o51" name="Preferred visit type"><option value="">Choose one</option><option>In-person</option><option>Telehealth</option><option>Either</option></select></div>
+          <div class="field full"><label for="o52">Clinical notes / special considerations</label>
+            <textarea id="o52" name="Clinical notes"></textarea></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Referring provider attestation</legend>
+        <input type="hidden" name="--8" value="Referring provider attestation">
+        <div class="opts">
+          <label><input type="checkbox" name="Attestation" value="I attest that the information provided is accurate to the best of my knowledge and authorize release of relevant records to AIRI for care coordination purposes." required>
+            I attest that the information provided is accurate to the best of my knowledge and authorize release of relevant records to AIRI for care coordination purposes. <span class="req" aria-hidden="true">*</span></label>
+        </div>
+        <div class="fields">
+          <div class="field"><label for="o60">Provider name (typed signature) <span class="req" aria-hidden="true">*</span></label>
+            <input id="o60" name="Signed (typed name)" type="text" required></div>
+          <div class="field"><label for="o61">Date</label>
+            <input id="o61" name="Signature date" type="date"></div>
+        </div>
+      </fieldset>
+
+      <noscript><p class="form-note">JavaScript is off in your browser, so this form sends as raw text. You can also call <a href="tel:+12093134433">(209) 313-4433</a> or use secure fax (209) 290-3664.</p></noscript>
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Email this referral</button>
+        <button class="btn btn-ghost" type="button" data-copy>Copy as text</button>
+        <span class="msg" role="status"></span>
+      </div>
+    </form>
+
+    <p class="form-note">This form supports referral coordination and does not replace clinical evaluation or the prescribing responsibilities of the treating team. AIRI &middot; 1148 W Hammer Ln, Stockton, CA 95209.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer"><div class="wrap">
+  <div>
+    <h4>AIRI</h4>
+    <p>Advanced Intestinal Rehabilitation Institute<br>1148 W Hammer Ln, Stockton, CA 95209<br>Serving patients all over California</p>
+  </div>
+  <div>
+    <h4>Contact</h4>
+    <ul>
+      <li>Phone: <a href="tel:+12093134433">(209) 313-4433</a></li>
+      <li>Secure fax: (209) 290-3664</li>
+      <li><a href="mailto:info@airispecialtyinfusion.com">info@airispecialtyinfusion.com</a></li>
+    </ul>
+  </div>
+  <div>
+    <h4>Site</h4>
+    <ul>
+      <li><a href="about.html">About AIRI</a></li>
+      <li><a href="conditions.html">Conditions treated</a></li>
+      <li><a href="program.html">Intestinal failure program</a></li>
+      <li><a href="sbs.html">Short bowel syndrome</a></li>
+      <li><a href="rehab.html">Intestinal rehabilitation</a></li>
+      <li><a href="transplant.html">Intestinal transplant</a></li>
+      <li><a href="refer.html">Refer a patient</a></li>
+      <li><a href="outpatient.html">Outpatient referral form</a></li>
+      <li><a href="patients.html">Patients &amp; caregivers</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="privacy.html">Privacy &amp; accessibility</a></li>
+    </ul>
+  </div>
+  <div class="footer-bottom">
+    <p><strong>AIRI is not an emergency service.</strong> For a medical emergency, call 911 or go to the nearest emergency department.</p>
+    <p>Information on this site is general and does not replace individualized medical advice from your treating clinicians.</p>
+    <p>&copy; 2026 Advanced Intestinal Rehabilitation Institute.</p>
+  </div>
+</div></footer>
+<script src="form.js?v=3"></script>
+<script src="site.js?v=3" defer></script>
+</body>
+</html>
