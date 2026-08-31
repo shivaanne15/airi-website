@@ -26,7 +26,7 @@ one small script. No build step, no framework, no server-side code.
 ## Publishing it
 
 Upload the whole folder to any static host — Netlify, Cloudflare Pages, GitHub Pages, or
-ordinary web hosting. Point `airispecialityinfusion.com` at it. Nothing else is required.
+ordinary web hosting. Point `airispecialtyinfusion.com` at it. Nothing else is required.
 
 To preview locally:
 
@@ -43,8 +43,8 @@ Then open <http://localhost:8765>.
 
 Each form carries its destination in one attribute.
 
-- `refer.html` → `<form ... data-mailto="referrals@airispecialityinfusion.com">`
-- `contact.html` → `<form ... data-mailto="info@airispecialityinfusion.com">`
+- `refer.html` → `<form ... data-mailto="referrals@airispecialtyinfusion.com">`
+- `contact.html` → `<form ... data-mailto="info@airispecialtyinfusion.com">`
 
 Change the address in that attribute and the form sends there. The addresses also appear as
 plain links in the page footer and on `contact.html`.
