@@ -52,7 +52,7 @@ plain links in the page footer and on `contact.html`.
 
 ## Changing the phone and fax numbers
 
-Search for `(209) 313-4433` and `(209) 290-3664` across the `.html` files.
+Search for `(209) 929-8260` and `(209) 290-3664` across the `.html` files.
 
 ## How the forms work
 
