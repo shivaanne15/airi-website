@@ -133,7 +133,7 @@ a:hover { color: var(--navy); }
 
 
 .nav-toggle { display: none; }
-@media screen and (max-width: 1299px) {
+@media screen and (max-width: 899px) {
   /* without JS the stacked header is too tall to pin; with it, the nav collapses */
   html:not(.js) .site-header { position: static; }
   .brand-text span { display: none; }
