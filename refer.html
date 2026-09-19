@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Refer a patient — AIRI</title>
-<meta name="description" content="Referral criteria, required records, and an online inpatient TPN / intestinal failure referral form for hospitals, physicians, GI and surgery practices, and infusion partners.">
+<title>Refer a Patient &amp; Contact — AIRI</title>
+<meta name="description" content="Contact AIRI, refer a hospitalized or clinic patient with intestinal failure, or request a consultation. Phone, secure fax, referral criteria, and online forms.">
 <link rel="icon" href="assets/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,40 +28,52 @@
   <nav class="site-nav" aria-label="Main"><div class="nav-row"><ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="programs.html">Programs &amp; Care</a></li>
-      <li><a href="refer.html" aria-current="page">Refer a Patient</a></li>
+      <li><a href="refer.html" aria-current="page">Refer &amp; Contact</a></li>
       <li><a href="patients.html">Patients &amp; Caregivers</a></li>
       <li><a href="about.html">About AIRI</a></li>
-      <li><a href="contact.html">Contact</a></li>
   </ul></div></nav>
 </header>
 
 <main id="main">
 
 <div class="page-head"><div class="wrap narrow">
-  <p class="eyebrow">For referring clinicians</p>
-  <h1>Refer a patient</h1>
-  <p>Use this page to refer hospitalized or outpatient patients who require parenteral nutrition, have intestinal failure, or may benefit from AIRI consultation and transition planning.</p>
+  <p class="eyebrow">Referrals &amp; contact</p>
+  <h1>Refer a patient or get in touch</h1>
+  <p>One place for clinicians and families: phone, fax, and email for AIRI, referral criteria, the inpatient and outpatient referral forms, and a consultation request for patients and caregivers.</p>
 </div></div>
 
 <section>
   <div class="wrap">
-    <h2>Three ways to refer</h2>
-    <div class="grid">
+    <div class="grid four">
       <div class="card">
         <h3>Phone</h3>
         <p><a class="num" href="tel:+12099298260">(209) 929-8260</a></p>
-        <p>Best for imminent discharge, an active TPN transition concern, or a quick question about fit.</p>
+        <p>Referral coordinator, Intestinal Rehabilitation Program. Fastest route for an imminent discharge or an active TPN concern.</p>
       </div>
       <div class="card">
         <h3>Secure fax</h3>
         <p class="num">(209) 290-3664</p>
-        <p>Best for a complete referral packet with records attached. Preferred route for protected health information.</p>
+        <p>Preferred route for referral packets, records, laboratory results, and anything that identifies a patient.</p>
       </div>
       <div class="card">
-        <h3>Referral form below</h3>
-        <p><a class="num" href="#form">Jump to the form &darr;</a></p>
-        <p>Fills in an email from your own account, addressed to the AIRI referral coordinator. Send records separately by secure fax.</p>
+        <h3>Email</h3>
+        <p><a href="mailto:info@airispecialtyinfusion.com">info@airispecialtyinfusion.com</a><br>
+        <a href="mailto:referrals@airispecialtyinfusion.com">referrals@airispecialtyinfusion.com</a></p>
+        <p>For general questions and to reach the coordinator. Do not send protected health information by ordinary email.</p>
       </div>
+      <div class="card">
+        <h3>Office &amp; service area</h3>
+        <p class="num">1148 W Hammer Ln<br>Stockton, CA 95209</p>
+        <p>Serving all of California — in-person, telehealth, and home-based visits where available.</p>
+      </div>
+    </div>
+    <div class="alert">
+      <p><strong>AIRI is not an emergency service.</strong> For a medical emergency &mdash; including fever or chills with a central line, severe trouble breathing, chest pain, fainting, uncontrolled bleeding, or a line that has been pulled out &mdash; call 911 or go to the nearest emergency department.</p>
+    </div>
+      <div class="btn-row">
+      <a class="btn btn-primary" href="#form">Inpatient referral form &darr;</a>
+      <a class="btn btn-ghost" href="outpatient.html">Outpatient referral form</a>
+      <a class="btn btn-ghost" href="#consult">Request a consultation &darr;</a>
     </div>
   </div>
 </section>
@@ -299,6 +311,87 @@
     <p class="form-note">This form supports referral coordination. It does not replace inpatient medical evaluation, hospital nutrition-support protocols, emergency care, or the prescribing responsibilities of the treating clinical team.</p>
   </div>
 </section>
+<section>
+  <div class="wrap">
+    <h2 id="consult">Request a consultation</h2>
+    <p class="eyebrow">For patients, caregivers, and non-urgent questions</p>
+    <p>Complex intestinal-failure and TPN care needs record review, insurance verification, and clinical prioritization before an appointment is booked, so AIRI uses a request-and-triage model rather than open online booking. Send this short request and a coordinator will call you to collect the rest securely.</p>
+
+    <div class="note">
+      <p><strong>Keep this brief.</strong> Ordinary email is not secure. Give us enough to reach you and understand the situation in one sentence. The coordinator will collect medical detail and records over the phone or by secure fax.</p>
+    </div>
+
+    <form class="form" action="mailto:info@airispecialtyinfusion.com" method="post" enctype="text/plain" data-mailto="info@airispecialtyinfusion.com" data-subject="AIRI consultation request">
+      <fieldset>
+        <legend>Who is asking</legend>
+        <input type="hidden" name="--1" value="Who is asking">
+        <div class="fields">
+          <div class="field"><label for="c1">Your name <span class="req" aria-hidden="true">*</span></label>
+            <input id="c1" name="Your name" type="text" required></div>
+          <div class="field"><label for="c2">You are <span class="req" aria-hidden="true">*</span></label>
+            <select id="c2" name="Requester type" required>
+              <option value="">Choose one</option>
+              <option>The patient</option>
+              <option>A family member or caregiver</option>
+              <option>A referring clinician or office</option>
+              <option>A home-infusion or home-health partner</option>
+              <option>Other</option>
+            </select></div>
+          <div class="field"><label for="c3">Phone <span class="req" aria-hidden="true">*</span></label>
+            <input id="c3" name="Phone" type="tel" required></div>
+          <div class="field"><label for="c4">Email</label>
+            <input id="c4" name="Email" type="email"></div>
+          <div class="field"><label for="c5">Best time to reach you</label>
+            <input id="c5" name="Best time to call" type="text" placeholder="Weekday mornings, after 4pm, etc."></div>
+          <div class="field"><label for="c6">Preferred language / interpreter needed</label>
+            <input id="c6" name="Language / interpreter" type="text"></div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>About the request</legend>
+        <input type="hidden" name="--2" value="About the request">
+        <div class="fields">
+          <div class="field"><label for="c10">Patient first name or initials</label>
+            <input id="c10" name="Patient (first name or initials)" type="text"></div>
+          <div class="field"><label for="c11">City or area</label>
+            <input id="c11" name="City / area" type="text"></div>
+          <div class="field"><label for="c12">What is this about? <span class="req" aria-hidden="true">*</span></label>
+            <select id="c12" name="Request type" required>
+              <option value="">Choose one</option>
+              <option>New consultation for intestinal failure or TPN</option>
+              <option>Follow-up after a hospital discharge on TPN</option>
+              <option>Question about whether AIRI is the right fit</option>
+              <option>Home TPN transition help</option>
+              <option>Education for a patient or caregiver</option>
+              <option>Something else</option>
+            </select></div>
+          <div class="field"><label for="c13">Is the patient on TPN now?</label>
+            <select id="c13" name="Currently on TPN">
+              <option value="">Choose one</option><option>Yes</option><option>No</option>
+              <option>Not yet, but expected</option><option>Not sure</option>
+            </select></div>
+          <div class="field"><label for="c14">Referring physician, if any</label>
+            <input id="c14" name="Referring physician" type="text"></div>
+          <div class="field"><label for="c15">Insurance or payer</label>
+            <input id="c15" name="Insurance / payer" type="text"></div>
+          <div class="field full"><label for="c16">In one or two sentences, what do you need help with? <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="c16" name="What you need help with" required></textarea></div>
+        </div>
+      </fieldset>
+
+      <noscript><p class="form-note">JavaScript is off in your browser, so this form sends as raw text. You can also call <a href="tel:+12099298260">(209) 929-8260</a> or use secure fax (209) 290-3664.</p></noscript>
+      <div class="form-actions">
+        <button class="btn btn-primary" type="submit">Email this request</button>
+        <button class="btn btn-ghost" type="button" data-copy>Copy as text</button>
+        <span class="msg" role="status"></span>
+      </div>
+    </form>
+
+    <p class="form-note">Sending this request does not create a clinician&ndash;patient relationship and is not a substitute for medical care. If your situation is urgent, call (209) 929-8260. If it is an emergency, call 911.</p>
+  </div>
+</section>
+
 </main>
 
 <footer class="site-footer"><div class="wrap">
@@ -326,7 +419,7 @@
       <li><a href="refer.html">Refer a patient</a></li>
       <li><a href="outpatient.html">Outpatient referral form</a></li>
       <li><a href="patients.html">Patients &amp; caregivers</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="refer.html#consult">Contact &amp; consultations</a></li>
       <li><a href="privacy.html">Privacy &amp; accessibility</a></li>
     </ul>
   </div>
