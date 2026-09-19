@@ -14,7 +14,7 @@
   --alert: #8c3a1e;
   --alert-bg: #fdf3ee;
   --grad: linear-gradient(120deg, #2f6fb5 0%, #2b9fb0 55%, #58b96f 100%);
-  --measure: 68ch;
+  --measure: 85ch;
   --pad: clamp(1.25rem, 5vw, 4rem);
 }
 
