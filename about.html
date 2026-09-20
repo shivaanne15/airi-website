@@ -1,77 +1,405 @@
-/* About page: keep intro and founder visually connected */
+<!DOCTYPE html>
+<html lang="en">
 
-.about-hero {
-  padding-bottom: 2.5rem;
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>About AIRI | Advanced Intestinal Rehabilitation Institute</title>
+
+<meta name="description"
+content="Learn about AIRI, a physician-led intestinal rehabilitation program in Stockton, California, supporting patients with complex intestinal and nutrition needs.">
+
+<link rel="canonical" href="https://airispecialtyinfusion.com/about.html">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AIRI - Advanced Intestinal Rehabilitation Institute">
+<meta property="og:title" content="About AIRI | Advanced Intestinal Rehabilitation Institute">
+<meta property="og:description"
+content="Learn about AIRI, a physician-led intestinal rehabilitation program in Stockton, California.">
+<meta property="og:url" content="https://airispecialtyinfusion.com/about.html">
+<meta property="og:image" content="https://airispecialtyinfusion.com/assets/logo-mark.png">
+
+<link rel="icon" href="assets/logo-mark.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Public+Sans:wght@400;600;700&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet" href="style.css?v=8">
+
+
+<!-- Structured data -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://airispecialtyinfusion.com/#organization",
+      "name": "Advanced Intestinal Rehabilitation Institute",
+      "alternateName": "AIRI",
+      "url": "https://airispecialtyinfusion.com/",
+      "logo": "https://airispecialtyinfusion.com/assets/logo-mark.png",
+      "telephone": "+1-209-929-8260",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1148 W Hammer Ln",
+        "addressLocality": "Stockton",
+        "addressRegion": "CA",
+        "postalCode": "95209",
+        "addressCountry": "US"
+      },
+      "founder": {
+        "@id": "https://airispecialtyinfusion.com/about.html#rajesh-kunadharaju"
+      }
+    },
+    {
+      "@type": "Physician",
+      "@id": "https://airispecialtyinfusion.com/about.html#rajesh-kunadharaju",
+      "name": "Rajesh Kunadharaju",
+      "honorificSuffix": "MD, FACP, FCCP",
+      "jobTitle": "Founder and Medical Director",
+      "worksFor": {
+        "@id": "https://airispecialtyinfusion.com/#organization"
+      }
+    }
+  ]
 }
+</script>
 
-.founder-section {
-  padding-top: 1rem;
-}
-
-
-/* Founder */
-
-.founder-grid {
-  display: grid;
-  grid-template-columns: minmax(320px, 0.85fr) minmax(0, 1.15fr);
-  gap: clamp(2.5rem, 6vw, 5rem);
-  align-items: center;
-}
-
-.founder-photo {
-  width: 100%;
-}
-
-.founder-photo img {
-  display: block;
-  width: 100%;
-  max-width: 480px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 18px;
-}
-
-.founder-copy {
-  max-width: 650px;
-}
+</head>
 
 
-/* About page text links */
+<body>
 
-.about-hero a,
-.founder-section a,
-main section p a {
-  text-decoration-thickness: 1px;
-  text-underline-offset: 3px;
-}
+<a class="skip" href="#main">Skip to content</a>
 
 
-/* Mobile */
+<div class="emergency-bar">
+  <div class="wrap">
+    <p>
+      AIRI is not an emergency service. For a medical emergency,
+      call 911 or go to the nearest emergency department.
+    </p>
+  </div>
+</div>
 
-@media (max-width: 760px) {
 
-  .about-hero {
-    padding-bottom: 1.5rem;
-  }
+<header class="site-header">
 
-  .founder-section {
-    padding-top: 0;
-  }
+  <div class="header-top">
+    <a class="brand" href="index.html">
+      <img src="assets/logo-mark.png" alt="">
+      <span class="brand-text">
+        <b>AIRI</b>
+        <span>Advanced Intestinal Rehabilitation Institute</span>
+      </span>
+    </a>
+  </div>
 
-  .founder-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
+  <nav class="site-nav" aria-label="Main">
+    <div class="nav-row">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="programs.html">Programs &amp; Care</a></li>
+        <li><a href="patients.html">Patients &amp; Caregivers</a></li>
+        <li><a href="about.html" aria-current="page">About AIRI</a></li>
+        <li><a href="refer.html">Refer &amp; Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  .founder-photo img {
-    width: 100%;
-    max-width: 420px;
-    margin: 0 auto;
-    aspect-ratio: 4 / 5;
-  }
+</header>
 
-  .founder-copy {
-    max-width: none;
-  }
-}
+
+<main id="main">
+
+
+<!-- ABOUT AIRI -->
+
+<section class="hero about-hero">
+  <div class="wrap narrow">
+
+    <h1>About AIRI</h1>
+
+    <p class="lead">
+      The Advanced Intestinal Rehabilitation Institute (AIRI) is a
+      physician-led program based in Stockton, California, providing
+      coordinated care for patients with
+      <a href="program.html">intestinal failure</a>,
+      <a href="sbs.html">short bowel syndrome</a>,
+      and complex nutrition needs.
+    </p>
+
+    <p>
+      AIRI was created to bridge the gap between hospital care and life at
+      home, bringing together medical care, nutrition support, monitoring,
+      education, and care coordination closer to the communities patients
+      call home.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- FOUNDER / WHY AIRI EXISTS -->
+
+<section class="founder-section">
+  <div class="wrap">
+
+    <div class="founder-grid">
+
+      <div class="founder-photo">
+        <img
+          src="assets/rajesh-kunadharaju.jpeg"
+          alt="Rajesh Kunadharaju, MD, FACP, FCCP, Founder and Medical Director of AIRI">
+      </div>
+
+      <div class="founder-copy">
+
+        <p class="eyebrow">Why AIRI exists</p>
+
+        <h2>Founded by Rajesh Kunadharaju, MD, FACP, FCCP</h2>
+
+        <p>
+          Dr. Kunadharaju founded AIRI after years of caring for medically
+          complex patients across hospital, critical-care, rehabilitation,
+          and post-acute settings.
+        </p>
+
+        <p>
+          Through this work, he saw patients with intestinal failure,
+          short bowel syndrome, complex nutrition needs, and dependence on
+          parenteral nutrition face fragmented care — particularly during
+          the transition from hospital to home.
+        </p>
+
+        <p>
+          He created AIRI to provide a more coordinated, patient-centered
+          pathway connecting medical care, nutrition support, monitoring,
+          education, clinicians, and caregivers.
+        </p>
+
+        <p>
+          Dr. Kunadharaju is AIRI's Founder and Medical Director and is
+          board certified in Internal Medicine, Pulmonary Medicine, and
+          Critical Care Medicine.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- VISION -->
+
+<section class="tint">
+  <div class="wrap narrow">
+
+    <h2>Our vision</h2>
+
+    <p>
+      AIRI's vision is to be a trusted, community-based resource for
+      intestinal rehabilitation and specialized parenteral nutrition support,
+      helping patients receive coordinated care closer to home.
+    </p>
+
+    <p>
+      Our goal is not simply to manage parenteral nutrition. We work to help
+      each patient achieve the best possible level of nutritional stability,
+      hydration, functional recovery, independence, and quality of life.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- APPROACH -->
+
+<section>
+  <div class="wrap">
+
+    <h2>Our approach to care</h2>
+
+    <div class="grid two">
+
+      <div class="card">
+        <h3>Individualized care</h3>
+        <p>
+          Every patient's intestinal anatomy, diagnosis, nutrition needs,
+          treatment goals, home environment, and support system are different.
+          Care plans reflect those individual needs.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Coordinated transitions</h3>
+        <p>
+          Going home on parenteral nutrition should not mean going home
+          without support. AIRI coordinates with inpatient teams,
+          home-infusion providers, home-health clinicians, patients,
+          caregivers, and outpatient specialists.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Education and empowerment</h3>
+        <p>
+          Patients and caregivers need practical, understandable information
+          about nutrition support, central-line safety, hydration, monitoring,
+          warning signs, and when to contact their care team.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Collaboration</h3>
+        <p>
+          AIRI works alongside — not in place of — each patient's
+          gastroenterologist, surgeon, primary care clinician, hospital team,
+          dietitian, pharmacist, infusion provider, and other specialists.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- HOSPITAL TO HOME -->
+
+<section class="tint">
+  <div class="wrap narrow">
+
+    <h2>Connecting hospital care with life at home</h2>
+
+    <p>
+      Complex intestinal and nutrition care often extends across multiple
+      settings. AIRI helps connect the people involved in that care so
+      patients and families have greater continuity as they transition from
+      the hospital to ongoing care at home.
+    </p>
+
+    <p>
+      We coordinate with referring clinicians, hospitals,
+      gastroenterologists, surgeons, dietitians, home-infusion pharmacies,
+      home-health teams, and other specialists while supporting nutrition
+      management, monitoring, education, and
+      <a href="rehab.html">intestinal rehabilitation</a>.
+    </p>
+
+  </div>
+</section>
+
+
+<!-- CTA -->
+
+<section>
+  <div class="wrap narrow">
+
+    <h2>Learn more about care at AIRI</h2>
+
+    <p>
+      Explore AIRI's programs for intestinal failure, short bowel syndrome,
+      intestinal rehabilitation, and complex nutrition support, or contact
+      our team about referring a patient.
+    </p>
+
+    <div class="btn-row">
+
+      <a class="btn btn-primary" href="programs.html">
+        Explore Programs &amp; Care
+      </a>
+
+      <a class="btn btn-ghost" href="refer.html">
+        Refer a Patient
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+
+</main>
+
+
+<footer class="site-footer">
+  <div class="wrap">
+
+    <div>
+      <h4>AIRI</h4>
+      <p>
+        Advanced Intestinal Rehabilitation Institute<br>
+        1148 W Hammer Ln, Stockton, CA 95209<br>
+        Serving patients all over California
+      </p>
+    </div>
+
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>
+          Phone:
+          <a href="tel:+12099298260">(209) 929-8260</a>
+        </li>
+        <li>Secure fax: (209) 290-3664</li>
+        <li>
+          <a href="mailto:info@airispecialtyinfusion.com">
+            info@airispecialtyinfusion.com
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="about.html">About AIRI</a></li>
+        <li><a href="conditions.html">Conditions treated</a></li>
+        <li><a href="programs.html">Programs &amp; care</a></li>
+        <li><a href="program.html">Intestinal failure program</a></li>
+        <li><a href="sbs.html">Short bowel syndrome</a></li>
+        <li><a href="rehab.html">Intestinal rehabilitation</a></li>
+        <li><a href="transplant.html">Intestinal transplant</a></li>
+        <li><a href="refer.html">Refer a patient</a></li>
+        <li><a href="outpatient.html">Outpatient referral form</a></li>
+        <li><a href="patients.html">Patients &amp; caregivers</a></li>
+        <li><a href="refer.html#consult">Contact &amp; consultations</a></li>
+        <li><a href="privacy.html">Privacy &amp; accessibility</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-bottom">
+
+      <p>
+        <strong>AIRI is not an emergency service.</strong>
+        For a medical emergency, call 911 or go to the nearest emergency
+        department.
+      </p>
+
+      <p>
+        Information on this site is general and does not replace individualized
+        medical advice from your treating clinicians.
+      </p>
+
+      <p>&copy; 2026 Advanced Intestinal Rehabilitation Institute.</p>
+
+    </div>
+
+  </div>
+</footer>
+
+
+<script src="site.js?v=3" defer></script>
+
+</body>
+</html>
