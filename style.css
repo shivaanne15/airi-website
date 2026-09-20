@@ -470,3 +470,30 @@ html.js .reveal.in { opacity: 1; transform: none; }
 @media (max-width: 800px) {
   .hero-photo img { aspect-ratio: 3 / 2; }
 }
+
+/* ---------- About page ---------- */
+
+/* First section: stack the heading and paragraphs normally.
+   (The base .hero is a two-column grid made for the home page.) */
+.about-hero .wrap { display: block; max-width: 1120px; }
+.about-hero p.lead { font-size: 1.15rem; color: var(--ink); }
+
+/* Founder: text on the left, larger photo on the right */
+.founder-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+.founder-copy { order: 1; min-width: 0; }
+.founder-photo { order: 2; margin: 0; min-width: 0; }
+.founder-photo img {
+  display: block; width: 100%; max-width: 440px; height: auto;
+  margin-left: auto;
+  border-radius: 14px; box-shadow: 0 14px 36px rgba(15, 51, 80, 0.16);
+}
+@media (max-width: 800px) {
+  .founder-grid { grid-template-columns: 1fr; }
+  .founder-photo { order: -1; }
+  .founder-photo img { max-width: 320px; margin-inline: auto; }
+}
