@@ -2,11 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "airi-site",
+      "name": "serve",
       "runtimeExecutable": "python3",
-      "runtimeArgs": [
-        "serve.py"
-      ],
+      "runtimeArgs": ["serve.py"],
       "port": 8770
     }
   ]
