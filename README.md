@@ -50,7 +50,8 @@ Search for `(209) 929-8260` and `(209) 290-3664` across the `.html` files.
 ## Referral forms
 
 The online referral and consultation forms were removed; referrals come in by phone and secure
-fax. The forms (and `form.js`, which turned them into emails) are in git history — revert the
+fax. `refer.html` offers two printable PDFs from `assets/forms/` — to replace one, overwrite the
+file under the same name. The forms (and `form.js`, which turned them into emails) are in git history — revert the
 commit "Remove referral and consultation forms" to bring them back.
 
 ## Adding a page
